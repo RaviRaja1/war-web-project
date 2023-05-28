@@ -37,13 +37,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>raviraja Release nexus Repository</name>
-	      <url>http://15.206.173.155:8081/repository/raviraja-relese/</url>
+	      <url>http://3.109.186.8:8081/repository/raviraja-relese/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>raviraja snapshot nexus Repository</name>
-	      <url>http://15.206.173.155:8081/repository/raviraja-snapshot/</url>
+	      <url>http://3.109.186.8:8081/repository/raviraja-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
