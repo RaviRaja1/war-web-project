@@ -6,6 +6,19 @@
   <packaging>war</packaging>
   <name>WAR Web Project</name>
   <description>A very simple Maven-enabled WAR web project</description>
+  <properties>
+		<jdk.version>1.8</jdk.version>
+		<spring.version>5.1.2.RELEASE</spring.version>
+		<junit.version>4.11</junit.version>
+		<log4j.version>1.2.17</log4j.version>
+		<sonar.host.url>http://43.205.239.6:9000/</sonar.host.url>
+		<sonar.login>squ_714e7f4c70f9b4392872a280aecb8ae86a0c8bb6</sonar.login>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+	</properties>
+
   <dependencies>
   	<dependency>
   		<groupId>com.google.code.gson</groupId>
@@ -19,6 +32,21 @@
   		<scope>provided</scope>
   	</dependency>
   </dependencies>
+  <distributionManagement>
+	
+	    <repository>
+	      <id>nexus</id>
+	      <name>raviraja Release nexus Repository</name>
+	      <url>http://15.206.173.155:8081/repository/raviraja-relese/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>raviraja snapshot nexus Repository</name>
+	      <url>http://15.206.173.155:8081/repository/raviraja-snapshot/</url>
+	    </snapshotRepository>
+	    
+	</distributionManagement>
   <build>
     <plugins>
       <plugin>
